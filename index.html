@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Aravind C | CSE Student & Aspiring Software Engineer</title>
+  <meta name="description" content="Portfolio of Aravind C — 3rd year B.E. CSE student from Tirunelveli, Tamil Nadu. Skilled in C, C++, Java, HTML, CSS, and JavaScript.">
+  <meta name="keywords" content="Aravind C, Portfolio, CSE Student, Software Engineer, Java, HTML, CSS, JavaScript, Tirunelveli">
+  <meta name="author" content="Aravind C">
+  
+  <!-- Stylesheet Link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- PURE CSS INTERACTIVE CONTROLS (Must remain at the very top of body) -->
+  <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox" hidden>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" hidden>
+
+  <!-- APP CONTAINER -->
+  <div class="app-container">
+
+    <!-- THEME ANIMATED BACKGROUND BLOBS -->
+    <div class="bg-glow-blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="header">
+      <div class="container">
+        <!-- Logo -->
+        <a href="#" class="logo" id="header-logo">
+          AravindC
+          <span class="logo-dot"></span>
+        </a>
+
+        <!-- Navigation Links -->
+        <nav class="nav-menu">
+          <ul class="nav-links">
+            <li><a href="#hero" class="nav-link" id="nav-home">Home</a></li>
+            <li><a href="#about" class="nav-link" id="nav-about-me">About</a></li>
+            <li><a href="#portfolio" class="nav-link" id="nav-work">Work</a></li>
+            <li><a href="#timeline" class="nav-link" id="nav-exp">Education</a></li>
+            <li><a href="#testimonials" class="nav-link" id="nav-reviews">Goals</a></li>
+            <li><a href="#contact" class="nav-link" id="nav-connect">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="header-actions">
+          <!-- Light/Dark Switch -->
+          <label for="theme-toggle" class="theme-switch-label" id="theme-btn" title="Toggle Theme">
+            <!-- Sun Icon (Dark Mode View) -->
+            <svg class="sun-icon" viewBox="0 0 24 24">
+              <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.02-.39-1.41 0s-.39 1.02 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.01c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"/>
+            </svg>
+            <!-- Moon Icon (Light Mode View) -->
+            <svg class="moon-icon" viewBox="0 0 24 24">
+              <path d="M12.3 22h-.1c-5.5 0-10-4.5-10-10 0-4.8 3.5-8.9 8.2-9.8.6-.1 1.2.3 1.3.9.1.6-.2 1.2-.8 1.5-2.8 1.4-4.7 4.3-4.7 7.4 0 4.4 3.6 8 8 8 3.1 0 6-1.9 7.4-4.7.3-.6.9-.9 1.5-.8.6.1 1 .7.9 1.3-.9 4.7-5 8.2-9.8 8.2z"/>
+            </svg>
+          </label>
+
+          <!-- Mobile Nav Toggle Burger -->
+          <label for="nav-toggle" class="nav-toggle-label" id="mobile-menu-btn" title="Toggle Navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Intro Column -->
+          <div class="hero-intro">
+            <span class="hero-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+              Open to Internships &amp; Collaborations
+            </span>
+            <h1 class="hero-title">Building Software that <span>Solves Problems</span>.</h1>
+            <p class="hero-desc">Hi, I'm Aravind C. A 3rd year B.E. Computer Science &amp; Engineering student from Tirunelveli, Tamil Nadu. I'm passionate about coding and on a journey to become a software engineer — turning ideas into real-world applications.</p>
+            <div class="hero-actions">
+              <a href="#portfolio" class="btn btn-primary" id="hero-btn-work">View Projects</a>
+              <a href="#contact" class="btn btn-secondary" id="hero-btn-contact">Let's Connect</a>
+            </div>
+            <!-- Socials -->
+            <div class="hero-socials">
+              <a href="https://github.com/akaravind22" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.137 20.164 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/aravind2229/" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+              <a href="https://www.instagram.com/ak_aravind_22/" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+              </a>
+            </div>
+          </div>
+          <!-- Profile Graphics Column -->
+          <div class="hero-graphic">
+            <div class="hero-glow-ring"></div>
+            <div class="hero-img-wrapper">
+              <img src="images/profile.jpg" alt="Aravind C Portrait">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT & SKILLS SECTION -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Bio & Statistics -->
+          <div class="about-info">
+            <span class="section-subtitle">About Me</span>
+            <h3 class="section-title">Passionate About <span>Code</span></h3>
+            <div class="about-text">
+              <p>I'm Aravind C, a 3rd year B.E. Computer Science &amp; Engineering student. I love learning new technologies and building projects that solve real problems. My goal is to become a skilled software engineer who creates meaningful applications.</p>
+              <p>I enjoy working with programming languages like C, C++, and Java, and building web interfaces with HTML, CSS, and JavaScript. I'm always eager to learn, grow, and take on new coding challenges.</p>
+            </div>
+            <!-- Stats Grid -->
+            <div class="about-stats">
+              <div class="glass-card stat-card">
+                <span class="stat-number">3rd</span>
+                <span class="stat-label">Year CSE</span>
+              </div>
+              <div class="glass-card stat-card">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Projects</span>
+              </div>
+              <div class="glass-card stat-card">
+                <span class="stat-number">6</span>
+                <span class="stat-label">Core Skills</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills & Tech Badges -->
+          <div class="skills-section">
+            <div class="skills-container">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">C Programming</span>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" style="--level: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">C++</span>
+                  <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" style="--level: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Java</span>
+                  <span class="skill-percentage">82%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" style="--level: 82%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">HTML, CSS &amp; JavaScript</span>
+                  <span class="skill-percentage">88%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" style="--level: 88%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tech-badges">
+              <h4 class="tech-badges-title">Technologies I Know</h4>
+              <div class="badges-grid">
+                <div class="badge-item">
+                  <svg viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2z"/></svg>
+                  C
+                </div>
+                <div class="badge-item">
+                  <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+                  C++
+                </div>
+                <div class="badge-item">
+                  <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4 6h-4v2h4v2h-4v2h4v2H9V7h6v2z"/></svg>
+                  Java
+                </div>
+                <div class="badge-item">
+                  <svg viewBox="0 0 24 24"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+                  HTML5
+                </div>
+                <div class="badge-item">
+                  <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                  CSS3
+                </div>
+                <div class="badge-item">
+                  <svg viewBox="0 0 24 24"><path d="M12 2C6.47 2 2 6.48 2 12s4.47 10 10 10 10-4.48 10-10S17.53 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
+                  JavaScript
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">My Portfolio</span>
+          <h2 class="section-title">Recent <span>Projects</span></h2>
+        </div>
+
+        <!-- PURE CSS FILTER SYSTEM -->
+        <div class="portfolio-container">
+          <!-- Invisible Filter Radio Inputs -->
+          <input type="radio" id="filter-all" name="portfolio-filter" checked hidden>
+          <input type="radio" id="filter-web" name="portfolio-filter" hidden>
+          <input type="radio" id="filter-java" name="portfolio-filter" hidden>
+
+          <div class="filter-buttons">
+            <label for="filter-all" class="filter-btn">All Projects</label>
+            <label for="filter-web" class="filter-btn">Web</label>
+            <label for="filter-java" class="filter-btn">Java</label>
+          </div>
+
+          <div class="projects-grid">
+            <div class="glass-card project-card web">
+              <div class="project-img-box">
+                <div class="project-placeholder" style="--hue: 260">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                    <path d="M3 9h18M9 21V9"/>
+                  </svg>
+                  <span>Loan Management System</span>
+                </div>
+                <div class="project-img-overlay">
+                  <a href="https://github.com/akaravind22/Loan-Management-System" target="_blank" rel="noopener noreferrer" class="project-overlay-btn" aria-label="View on GitHub">
+                    <svg viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <div class="project-info">
+                <span class="project-tag">Web Application</span>
+                <h3 class="project-card-title">Loan Management System</h3>
+                <p class="project-card-desc">A Spring Boot web application to manage the complete loan lifecycle — application, approval, EMI calculation, and repayment with role-based access for Admin, Staff, and Customer.</p>
+                <label for="modal-toggle-1" class="project-readmore">
+                  Learn More
+                  <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+                </label>
+              </div>
+            </div>
+
+            <div class="glass-card project-card java">
+              <div class="project-img-box">
+                <div class="project-placeholder" style="--hue: 30">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+                  </svg>
+                  <span>Console Application</span>
+                </div>
+                <div class="project-img-overlay">
+                  <a href="https://github.com/akaravind22/Loan-Management-System-Console-" target="_blank" rel="noopener noreferrer" class="project-overlay-btn" aria-label="View on GitHub">
+                    <svg viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <div class="project-info">
+                <span class="project-tag">Java Console</span>
+                <h3 class="project-card-title">Loan Management System (Console)</h3>
+                <p class="project-card-desc">Backend console version of the Loan Management System built with Java and Spring Boot — handles loan processing, database operations, and server-side logic.</p>
+                <a href="https://github.com/akaravind22/Loan-Management-System-Console-" target="_blank" rel="noopener noreferrer" class="project-readmore">
+                  View on GitHub
+                  <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE / TIMELINE SECTION -->
+    <section id="timeline" class="timeline-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">My Journey</span>
+          <h2 class="section-title">Education <span>Path</span></h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item left">
+            <div class="glass-card timeline-content">
+              <span class="timeline-date">2024 – Present</span>
+              <h3 class="timeline-title">B.E. Computer Science &amp; Engineering</h3>
+              <span class="timeline-company">National Engineering College, Kovilpatti</span>
+              <p class="timeline-desc">Started in 2024 and currently in my 3rd year, learning core computer science subjects, data structures, algorithms, and software development. Building hands-on projects to strengthen my programming skills.</p>
+            </div>
+          </div>
+          <div class="timeline-item right">
+            <div class="glass-card timeline-content">
+              <span class="timeline-date">2021 – 2024</span>
+              <h3 class="timeline-title">Higher Secondary Education</h3>
+              <span class="timeline-company">Tirunelveli, Tamil Nadu</span>
+              <p class="timeline-desc">Completed higher secondary education with a focus on Mathematics and Computer Science, which sparked my interest in programming and software engineering.</p>
+            </div>
+          </div>
+          <div class="timeline-item left">
+            <div class="glass-card timeline-content">
+              <span class="timeline-date">Goal</span>
+              <h3 class="timeline-title">Software Engineer</h3>
+              <span class="timeline-company">Future Aspiration</span>
+              <p class="timeline-desc">Working towards becoming a professional software engineer — building scalable applications, contributing to open source, and continuously learning new technologies.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Vision</span>
+          <h2 class="section-title">My <span>Goals</span></h2>
+        </div>
+
+        <!-- PURE CSS TESTIMONIAL CAROUSEL -->
+        <input type="radio" id="slide-1" name="carousel" checked hidden>
+        <input type="radio" id="slide-2" name="carousel" hidden>
+        <input type="radio" id="slide-3" name="carousel" hidden>
+
+        <div class="carousel-wrapper">
+          <div class="carousel-slides">
+            <!-- Slide 1 -->
+            <div class="carousel-slide">
+              <div class="glass-card testimonial-card">
+                <svg class="quote-icon" viewBox="0 0 24 24">
+                  <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+                </svg>
+                <p class="testimonial-text">"My goal is to become a skilled software engineer who builds applications that make a real difference. Every line of code I write brings me closer to that dream."</p>
+                <div class="testimonial-user">
+                  <img src="images/profile.jpg" alt="Aravind C" class="testimonial-avatar">
+                  <div class="testimonial-info">
+                    <h4 class="testimonial-name">Aravind C</h4>
+                    <span class="testimonial-role">Aspiring Software Engineer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-slide">
+              <div class="glass-card testimonial-card">
+                <svg class="quote-icon" viewBox="0 0 24 24">
+                  <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+                </svg>
+                <p class="testimonial-text">"I believe in learning by doing. Building projects like the Loan Management System helps me understand how real-world software works — from backend logic to user interfaces."</p>
+                <div class="testimonial-user">
+                  <img src="images/profile.jpg" alt="Aravind C" class="testimonial-avatar">
+                  <div class="testimonial-info">
+                    <h4 class="testimonial-name">Aravind C</h4>
+                    <span class="testimonial-role">CSE Student, 3rd Year</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-slide">
+              <div class="glass-card testimonial-card">
+                <svg class="quote-icon" viewBox="0 0 24 24">
+                  <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+                </svg>
+                <p class="testimonial-text">"Technology is constantly evolving, and I'm committed to growing with it. I'm open to internships, collaborations, and any opportunity to learn from experienced developers."</p>
+                <div class="testimonial-user">
+                  <img src="images/profile.jpg" alt="Aravind C" class="testimonial-avatar">
+                  <div class="testimonial-info">
+                    <h4 class="testimonial-name">Aravind C</h4>
+                    <span class="testimonial-role">Tirunelveli, Tamil Nadu</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Control Dots -->
+          <div class="carousel-dots">
+            <label for="slide-1" class="carousel-dot"></label>
+            <label for="slide-2" class="carousel-dot"></label>
+            <label for="slide-3" class="carousel-dot"></label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Get In Touch</span>
+          <h2 class="section-title">Start a <span>Project</span></h2>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Info Column -->
+          <div class="contact-info-cards">
+            <!-- Card 1 -->
+            <div class="glass-card contact-info-card">
+              <div class="contact-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              </div>
+              <div class="contact-card-content">
+                <h4>Email Me</h4>
+                <p><a href="mailto:aravindbgmz@gmail.com">aravindbgmz@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="glass-card contact-info-card">
+              <div class="contact-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              </div>
+              <div class="contact-card-content">
+                <h4>Location</h4>
+                <p>Tirunelveli, Tamil Nadu</p>
+              </div>
+            </div>
+            <div class="glass-card contact-info-card">
+              <div class="contact-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.137 20.164 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              </div>
+              <div class="contact-card-content">
+                <h4>GitHub</h4>
+                <p><a href="https://github.com/akaravind22" target="_blank" rel="noopener noreferrer">github.com/akaravind22</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Column -->
+          <form class="glass-card contact-form" action="mailto:aravindbgmz@gmail.com" method="POST" enctype="text/plain" id="connect-form">
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" id="form-name" class="form-input" placeholder=" " required>
+                <label for="form-name" class="form-label">Your Name</label>
+              </div>
+              <div class="form-group">
+                <input type="email" id="form-email" class="form-input" placeholder=" " required>
+                <label for="form-email" class="form-label">Email Address</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" id="form-subject" class="form-input" placeholder=" " required>
+              <label for="form-subject" class="form-label">Subject</label>
+            </div>
+            <div class="form-group">
+              <textarea id="form-message" class="form-input" placeholder=" " required></textarea>
+              <label for="form-message" class="form-label">Message Details</label>
+            </div>
+            <button type="submit" class="btn btn-primary" id="form-submit-btn">
+              Send Message
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-text">
+          <p>&copy; 2026 Aravind C. Built with passion using pure HTML &amp; CSS.</p>
+        </div>
+        <div class="footer-socials">
+          <a href="https://github.com/akaravind22" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.137 20.164 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/aravind2229/" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/ak_aravind_22/" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- CSS-ONLY MODAL OVERLAYS (Must remain children of .app-container to target them properly) -->
+
+    <!-- Modal 1 -->
+    <input type="checkbox" id="modal-toggle-1" hidden>
+    <div class="modal-overlay" id="modal-overlay-1">
+      <div class="glass-card modal-content">
+        <!-- Close label -->
+        <label for="modal-toggle-1" class="modal-close-btn" title="Close Modal">
+          <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </label>
+        <div class="project-placeholder modal-hero-img" style="--hue: 260">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="3" y="3" width="18" height="18" rx="2"/>
+            <path d="M3 9h18M9 21V9"/>
+          </svg>
+        </div>
+        <div class="modal-tags">
+          <span class="modal-tag">Spring Boot</span>
+          <span class="modal-tag">Java</span>
+          <span class="modal-tag">Web App</span>
+        </div>
+        <h3 class="modal-title">Loan Management System</h3>
+        <p class="modal-desc">A Spring Boot-based web application designed to manage the complete loan lifecycle, including application, approval, EMI calculation, and repayment. The system supports role-based access (Admin, Staff, Customer) with secure authentication, loan eligibility checks, dynamic interest rates, and payment tracking.</p>
+
+        <div class="modal-meta">
+          <div>
+            <span class="meta-item-title">Tech Stack</span>
+            <span class="meta-item-val">Java, Spring Boot, HTML</span>
+          </div>
+          <div>
+            <span class="meta-item-title">Type</span>
+            <span class="meta-item-val">Full-Stack Web App</span>
+          </div>
+          <div>
+            <span class="meta-item-title">Role</span>
+            <span class="meta-item-val">Developer</span>
+          </div>
+        </div>
+
+        <div class="modal-actions">
+          <a href="https://github.com/akaravind22/Loan-Management-System" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Source Code</a>
+          <label for="modal-toggle-1" class="btn btn-secondary">Close Details</label>
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- /APP CONTAINER -->
+
+</body>
+</html>
