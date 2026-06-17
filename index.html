@@ -16,7 +16,6 @@
 <body>
 
   <!-- PURE CSS INTERACTIVE CONTROLS (Must remain at the very top of body) -->
-  <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox" hidden>
   <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" hidden>
 
   <!-- APP CONTAINER -->
@@ -45,25 +44,13 @@
             <li><a href="#about" class="nav-link" id="nav-about-me">About</a></li>
             <li><a href="#portfolio" class="nav-link" id="nav-work">Work</a></li>
             <li><a href="#timeline" class="nav-link" id="nav-exp">Education</a></li>
-            <li><a href="#testimonials" class="nav-link" id="nav-reviews">Goals</a></li>
+            <li><a href="#certificates" class="nav-link" id="nav-certs">Certificates</a></li>
             <li><a href="#contact" class="nav-link" id="nav-connect">Contact</a></li>
           </ul>
         </nav>
 
         <!-- Header Actions -->
         <div class="header-actions">
-          <!-- Light/Dark Switch -->
-          <label for="theme-toggle" class="theme-switch-label" id="theme-btn" title="Toggle Theme">
-            <!-- Sun Icon (Dark Mode View) -->
-            <svg class="sun-icon" viewBox="0 0 24 24">
-              <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.02-.39-1.41 0s-.39 1.02 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.01c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"/>
-            </svg>
-            <!-- Moon Icon (Light Mode View) -->
-            <svg class="moon-icon" viewBox="0 0 24 24">
-              <path d="M12.3 22h-.1c-5.5 0-10-4.5-10-10 0-4.8 3.5-8.9 8.2-9.8.6-.1 1.2.3 1.3.9.1.6-.2 1.2-.8 1.5-2.8 1.4-4.7 4.3-4.7 7.4 0 4.4 3.6 8 8 8 3.1 0 6-1.9 7.4-4.7.3-.6.9-.9 1.5-.8.6.1 1 .7.9 1.3-.9 4.7-5 8.2-9.8 8.2z"/>
-            </svg>
-          </label>
-
           <!-- Mobile Nav Toggle Burger -->
           <label for="nav-toggle" class="nav-toggle-label" id="mobile-menu-btn" title="Toggle Navigation">
             <span></span>
@@ -334,78 +321,149 @@
       </div>
     </section>
 
-    <!-- TESTIMONIALS SECTION -->
-    <section id="testimonials" class="testimonials">
+    <!-- CERTIFICATES SECTION -->
+    <section id="certificates" class="certificates">
       <div class="container">
         <div class="section-header">
-          <span class="section-subtitle">Vision</span>
-          <h2 class="section-title">My <span>Goals</span></h2>
+          <span class="section-subtitle">Achievements</span>
+          <h2 class="section-title">My <span>Certificates</span></h2>
         </div>
 
-        <!-- PURE CSS TESTIMONIAL CAROUSEL -->
-        <input type="radio" id="slide-1" name="carousel" checked hidden>
-        <input type="radio" id="slide-2" name="carousel" hidden>
-        <input type="radio" id="slide-3" name="carousel" hidden>
-
-        <div class="carousel-wrapper">
-          <div class="carousel-slides">
-            <!-- Slide 1 -->
-            <div class="carousel-slide">
-              <div class="glass-card testimonial-card">
-                <svg class="quote-icon" viewBox="0 0 24 24">
-                  <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+        <div class="certificates-grid">
+          <div class="glass-card certificate-card">
+            <div class="certificate-img-box">
+              <div class="project-placeholder certificate-preview" style="--hue: 210">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
                 </svg>
-                <p class="testimonial-text">"My goal is to become a skilled software engineer who builds applications that make a real difference. Every line of code I write brings me closer to that dream."</p>
-                <div class="testimonial-user">
-                  <img src="images/profile.jpg" alt="Aravind C" class="testimonial-avatar">
-                  <div class="testimonial-info">
-                    <h4 class="testimonial-name">Aravind C</h4>
-                    <span class="testimonial-role">Aspiring Software Engineer</span>
-                  </div>
-                </div>
+                <span>NPTEL</span>
+              </div>
+              <div class="certificate-img-overlay">
+                <label for="cert-modal-1" class="certificate-overlay-btn" title="View Certificate">
+                  <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                </label>
               </div>
             </div>
-
-            <!-- Slide 2 -->
-            <div class="carousel-slide">
-              <div class="glass-card testimonial-card">
-                <svg class="quote-icon" viewBox="0 0 24 24">
-                  <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
-                </svg>
-                <p class="testimonial-text">"I believe in learning by doing. Building projects like the Loan Management System helps me understand how real-world software works — from backend logic to user interfaces."</p>
-                <div class="testimonial-user">
-                  <img src="images/profile.jpg" alt="Aravind C" class="testimonial-avatar">
-                  <div class="testimonial-info">
-                    <h4 class="testimonial-name">Aravind C</h4>
-                    <span class="testimonial-role">CSE Student, 3rd Year</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Slide 3 -->
-            <div class="carousel-slide">
-              <div class="glass-card testimonial-card">
-                <svg class="quote-icon" viewBox="0 0 24 24">
-                  <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
-                </svg>
-                <p class="testimonial-text">"Technology is constantly evolving, and I'm committed to growing with it. I'm open to internships, collaborations, and any opportunity to learn from experienced developers."</p>
-                <div class="testimonial-user">
-                  <img src="images/profile.jpg" alt="Aravind C" class="testimonial-avatar">
-                  <div class="testimonial-info">
-                    <h4 class="testimonial-name">Aravind C</h4>
-                    <span class="testimonial-role">Tirunelveli, Tamil Nadu</span>
-                  </div>
-                </div>
+            <div class="certificate-info">
+              <span class="certificate-tag">Cloud Computing</span>
+              <h3 class="certificate-title">Cloud Computing</h3>
+              <p class="certificate-issuer">Issued by NPTEL</p>
+              <div class="certificate-meta">
+                <span class="certificate-date">
+                  <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10z"/></svg>
+                  NPTEL
+                </span>
+                <a href="certificates/cloud-computing.pdf" target="_blank" rel="noopener noreferrer" class="certificate-verify">
+                  View PDF
+                  <svg viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                </a>
               </div>
             </div>
           </div>
 
-          <!-- Control Dots -->
-          <div class="carousel-dots">
-            <label for="slide-1" class="carousel-dot"></label>
-            <label for="slide-2" class="carousel-dot"></label>
-            <label for="slide-3" class="carousel-dot"></label>
+          <div class="glass-card certificate-card">
+            <div class="certificate-img-box">
+              <div class="project-placeholder certificate-preview" style="--hue: 175">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                </svg>
+                <span>NPTEL</span>
+              </div>
+              <div class="certificate-img-overlay">
+                <label for="cert-modal-2" class="certificate-overlay-btn" title="View Certificate">
+                  <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                </label>
+              </div>
+            </div>
+            <div class="certificate-info">
+              <span class="certificate-tag">Industrial IoT</span>
+              <h3 class="certificate-title">IIOT 4.0</h3>
+              <p class="certificate-issuer">Issued by NPTEL</p>
+              <div class="certificate-meta">
+                <span class="certificate-date">
+                  <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10z"/></svg>
+                  NPTEL
+                </span>
+                <a href="certificates/iiot-4.0.pdf" target="_blank" rel="noopener noreferrer" class="certificate-verify">
+                  View PDF
+                  <svg viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card certificate-card">
+            <div class="certificate-img-box">
+              <div class="project-placeholder certificate-preview" style="--hue: 140">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                </svg>
+                <span>NPTEL</span>
+              </div>
+              <div class="certificate-img-overlay">
+                <label for="cert-modal-3" class="certificate-overlay-btn" title="View Certificate">
+                  <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                </label>
+              </div>
+            </div>
+            <div class="certificate-info">
+              <span class="certificate-tag">Internet of Things</span>
+              <h3 class="certificate-title">Introduction to Internet of Things</h3>
+              <p class="certificate-issuer">Issued by NPTEL</p>
+              <div class="certificate-meta">
+                <span class="certificate-date">
+                  <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10z"/></svg>
+                  NPTEL
+                </span>
+                <a href="certificates/introduction-to-iot.pdf" target="_blank" rel="noopener noreferrer" class="certificate-verify">
+                  View PDF
+                  <svg viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card certificate-card">
+            <div class="certificate-img-box">
+              <div class="project-placeholder certificate-preview" style="--hue: 280">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                </svg>
+                <span>NPTEL</span>
+              </div>
+              <div class="certificate-img-overlay">
+                <label for="cert-modal-4" class="certificate-overlay-btn" title="View Certificate">
+                  <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                </label>
+              </div>
+            </div>
+            <div class="certificate-info">
+              <span class="certificate-tag">Blockchain</span>
+              <h3 class="certificate-title">Block Chain</h3>
+              <p class="certificate-issuer">Issued by NPTEL</p>
+              <div class="certificate-meta">
+                <span class="certificate-date">
+                  <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10z"/></svg>
+                  NPTEL
+                </span>
+                <a href="certificates/blockchain.pdf" target="_blank" rel="noopener noreferrer" class="certificate-verify">
+                  View PDF
+                  <svg viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -487,7 +545,7 @@
     <footer class="footer">
       <div class="container footer-content">
         <div class="footer-text">
-          <p>&copy; 2026 Aravind C. Built with passion using pure HTML &amp; CSS.</p>
+          <p>&copy; 2026 Aravind C. Built with passion using HTML &amp; CSS.</p>
         </div>
         <div class="footer-socials">
           <a href="https://github.com/akaravind22" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
@@ -504,6 +562,59 @@
     </footer>
 
     <!-- CSS-ONLY MODAL OVERLAYS (Must remain children of .app-container to target them properly) -->
+
+    <!-- Certificate Modals -->
+    <input type="checkbox" id="cert-modal-1" hidden>
+    <div class="modal-overlay cert-modal-overlay" id="cert-modal-overlay-1">
+      <div class="glass-card modal-content cert-modal-content">
+        <label for="cert-modal-1" class="modal-close-btn" title="Close">
+          <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </label>
+        <iframe src="certificates/cloud-computing.pdf" title="Cloud Computing Certificate" class="cert-modal-pdf"></iframe>
+        <h3 class="modal-title">Cloud Computing</h3>
+        <p class="modal-desc">NPTEL — Cloud Computing</p>
+        <a href="certificates/cloud-computing.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary cert-modal-download">Open Full PDF</a>
+      </div>
+    </div>
+
+    <input type="checkbox" id="cert-modal-2" hidden>
+    <div class="modal-overlay cert-modal-overlay" id="cert-modal-overlay-2">
+      <div class="glass-card modal-content cert-modal-content">
+        <label for="cert-modal-2" class="modal-close-btn" title="Close">
+          <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </label>
+        <iframe src="certificates/iiot-4.0.pdf" title="IIOT 4.0 Certificate" class="cert-modal-pdf"></iframe>
+        <h3 class="modal-title">IIOT 4.0</h3>
+        <p class="modal-desc">NPTEL — Industrial Internet of Things 4.0</p>
+        <a href="certificates/iiot-4.0.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary cert-modal-download">Open Full PDF</a>
+      </div>
+    </div>
+
+    <input type="checkbox" id="cert-modal-3" hidden>
+    <div class="modal-overlay cert-modal-overlay" id="cert-modal-overlay-3">
+      <div class="glass-card modal-content cert-modal-content">
+        <label for="cert-modal-3" class="modal-close-btn" title="Close">
+          <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </label>
+        <iframe src="certificates/introduction-to-iot.pdf" title="Introduction to Internet of Things Certificate" class="cert-modal-pdf"></iframe>
+        <h3 class="modal-title">Introduction to Internet of Things</h3>
+        <p class="modal-desc">NPTEL — Internet of Things</p>
+        <a href="certificates/introduction-to-iot.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary cert-modal-download">Open Full PDF</a>
+      </div>
+    </div>
+
+    <input type="checkbox" id="cert-modal-4" hidden>
+    <div class="modal-overlay cert-modal-overlay" id="cert-modal-overlay-4">
+      <div class="glass-card modal-content cert-modal-content">
+        <label for="cert-modal-4" class="modal-close-btn" title="Close">
+          <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </label>
+        <iframe src="certificates/blockchain.pdf" title="Block Chain Certificate" class="cert-modal-pdf"></iframe>
+        <h3 class="modal-title">Block Chain</h3>
+        <p class="modal-desc">NPTEL — Blockchain Technology</p>
+        <a href="certificates/blockchain.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary cert-modal-download">Open Full PDF</a>
+      </div>
+    </div>
 
     <!-- Modal 1 -->
     <input type="checkbox" id="modal-toggle-1" hidden>
